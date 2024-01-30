@@ -1,7 +1,8 @@
 library lab_clinicas_core;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/fp/either.dart';
+export 'src/fp/nil.dart';
+// export 'src/fp/unit.dart';
+export 'src/helpers/messages.dart';
+export 'src/rest_client/rest_client.dart';
+export 'src/constants/local_storage.dart';
