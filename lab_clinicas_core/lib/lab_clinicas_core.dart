@@ -6,3 +6,4 @@ export 'src/fp/nil.dart';
 export 'src/helpers/messages.dart';
 export 'src/rest_client/rest_client.dart';
 export 'src/constants/local_storage.dart';
+export 'src/lab_clinicas_core_config_core.dart';
