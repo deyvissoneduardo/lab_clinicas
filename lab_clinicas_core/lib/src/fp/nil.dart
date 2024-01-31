@@ -5,4 +5,4 @@ final class Nil {
   }
 }
 
-Nil get unit => Nil();
+Nil get nil => Nil();
