@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:lab_clinicas_core/src/loader/lab_clinicas_loader.dart';
 
+import 'theme/lab_clinicas_theme.dart';
+
 class LabClinicasCoreConfigCore extends StatelessWidget {
   final ApplicationBindings? bindings;
   final List<FlutterGetItPageRouter>? pages;
@@ -32,6 +34,8 @@ class LabClinicasCoreConfigCore extends StatelessWidget {
       builder: (context, routes, flutterGetItNavObserver) => AsyncStateBuilder(
         loader: LabClinicasLoader(),
         builder: (navigatorObserver) => MaterialApp(
+          theme: LabClinicasTheme.lightTheme,
+          darkTheme: LabClinicasTheme.darkTheme,
           title: title,
           routes: routes,
           navigatorObservers: [
