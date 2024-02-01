@@ -34,6 +34,7 @@ class LabClinicasCoreConfigCore extends StatelessWidget {
       builder: (context, routes, flutterGetItNavObserver) => AsyncStateBuilder(
         loader: LabClinicasLoader(),
         builder: (navigatorObserver) => MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: LabClinicasTheme.lightTheme,
           darkTheme: LabClinicasTheme.darkTheme,
           title: title,
