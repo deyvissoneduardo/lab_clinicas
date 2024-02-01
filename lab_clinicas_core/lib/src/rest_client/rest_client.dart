@@ -3,10 +3,10 @@ import 'package:dio/io.dart';
 import 'package:lab_clinicas_core/src/rest_client/interceptor/auth_interceptors.dart';
 
 final class RestClient extends DioForNative {
-  RestClient(String baseUrl)
+  RestClient()
       : super(
           BaseOptions(
-            baseUrl: baseUrl,
+            baseUrl: 'http://192.168.1.110:8080',
             connectTimeout: const Duration(seconds: 10),
             receiveTimeout: const Duration(seconds: 60),
           ),
